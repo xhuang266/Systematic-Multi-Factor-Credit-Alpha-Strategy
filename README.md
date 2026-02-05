@@ -19,7 +19,7 @@ Due to the lack of real-time transaction data, this project engineers structural
 * **Liquidity Cost:** Modeled using **Log-Market-Cap** via a power law to estimate Bid-Ask spreads (5bps for Jumbo issuers vs. 40bps for tail issuers).
 * **Momentum:** Derived from **Price-to-Par** divergence to capture yield compression trends.
 
-### 3. Transaction-Cost Aware Optimization
+### 3. Potfolio Optimization
 * **Objective Function:** Maximizes **Net Score** (Alpha Score minus Estimated Liquidity Penalty).
 * **Risk Constraints:**
     * **DTS Neutrality:** Matches benchmark risk contribution per sector.
@@ -39,4 +39,5 @@ CorpBond-MultiFactor-Strategy/
 │   ├── optimizer.py           # Scipy SLSQP & Heuristic Fallback
 │   └── analytics.py           # Performance Attribution & Visualization
 ├── main.py                    # Execution Entry Point
+
 └── README.md                  # Project Documentation
